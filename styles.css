@@ -270,3 +270,32 @@ footer {
         margin-right: 0;
     }
 }
+
+.logo-scroll-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo-scroll {
+    display: flex;
+    white-space: nowrap;
+}
+
+.logo-group {
+    display: flex;
+    animation: scrollLogos 20s linear infinite;
+}
+
+@keyframes scrollLogos {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.company-logo {
+    flex: 0 0 auto;
+    margin: 0 20px;
+}
